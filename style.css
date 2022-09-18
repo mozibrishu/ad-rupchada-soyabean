@@ -27,6 +27,7 @@ body, html {
 .item_5{
     top: 200px;
     left: 0px;
+    z-index: 20;
 }
 .item_6{
     top: 5px;
@@ -34,13 +35,15 @@ body, html {
 }
 .item_7{
     top: 15px;
-    left: 170px;
-    height: 185px;
-    width: 125px;
+    left: 160px;
+    height: 200px;
+    width: 135px;
+    z-index: 15;
 }
 .item_8{
     top: 135px;
     left: 20px;
+    z-index: 33;
 }
 .item_9{
     top: 40px;
