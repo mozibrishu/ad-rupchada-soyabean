@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body, html {
+    width: 300px;
+    height: 250px;
+    background-color: antiquewhite;
+}
+.banner {
+    width: 300px;
+    height: 250px;
+}
+
+.item_2{
+    top: 20px;
+    left: 23px;
+}
+.item_3{
+    top: 135px;
+    left: 115px;
+}
+
+.absolute{
+    position: absolute;
+}
+
+
+.scaleOpacity-animation {
+    animation: scaleOpacity 2s linear infinite;
+}
+
+@keyframes scaleOpacity {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    30% {
+        transform: scale(.95);
+        opacity: 1;
+    }
+
+    80% {
+        transform: scale(.98);
+        opacity: 1;
+    }
+}
