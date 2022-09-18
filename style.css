@@ -20,6 +20,33 @@ body, html {
     top: 135px;
     left: 115px;
 }
+.item_4{
+    top: 0px;
+    left: 0px;
+}
+.item_5{
+    top: 200px;
+    left: 0px;
+}
+.item_6{
+    top: 5px;
+    left: 5px;
+}
+.item_7{
+    top: 15px;
+    left: 170px;
+    height: 185px;
+    width: 125px;
+}
+.item_8{
+    top: 135px;
+    left: 20px;
+}
+.item_9{
+    top: 40px;
+    left: 25px;
+}
+
 
 .absolute{
     position: absolute;

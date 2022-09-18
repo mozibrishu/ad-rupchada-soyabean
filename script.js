@@ -1,4 +1,6 @@
 let thumb = document.querySelector('.item_3');
+let slide_2_elms = document.querySelectorAll('.slide_2');
+
 
 thumb.addEventListener('mousedown', downOperation);
 thumb.addEventListener('touchstart', downOperation);
@@ -11,8 +13,18 @@ function downOperation() {
     timeOutId = setTimeout(function () {
         addClass('.item_3', 'zoomOut-animation');
         addClass('.item_2', 'zoomOut-animation');
-        addClass('.item_1', 'zoomOut-animation');
-        addClass('.item_0', 'zoomIn-animation');
+
+        slide_2_elms.forEach(function (el){
+            el.classList.remove('hidden');
+            el.classList.add('zoomIn-animation');
+        });
+        setTimeout(function () {
+            slide_2_elms.forEach(function (el){
+                el.classList.remove('zoomIn-animation');
+            });
+            addClass('.item_8', 'scaleOpacity-animation');
+            addClass('.item_9', 'scaleOpacity-animation');
+        },1000);
     }, 600);
 }
 
