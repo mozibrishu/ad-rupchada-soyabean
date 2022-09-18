@@ -9,13 +9,16 @@ thumb.addEventListener('touchend', upOperation);
 function downOperation() {
     removeClass('.item_3', 'scaleOpacity-animation');
     timeOutId = setTimeout(function () {
-        addClass('.item_3', 'hidden');
+        addClass('.item_3', 'zoomOut-animation');
+        addClass('.item_2', 'zoomOut-animation');
+        addClass('.item_1', 'zoomOut-animation');
+        addClass('.item_0', 'zoomIn-animation');
     }, 600);
 }
 
 function upOperation() {
     clearTimeout(timeOutId);
-    addClass('.item_3', 'scaleOpacity-animation');
+        addClass('.item_3', 'scaleOpacity-animation');
 }
 
 

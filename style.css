@@ -51,3 +51,37 @@ body, html {
         opacity: 1;
     }
 }
+
+
+.zoomOut-animation {
+    animation: zoomOut 1s linear forwards;
+}
+
+@keyframes zoomOut {
+
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(.80);
+        opacity: 0;
+    }
+}
+
+
+.zoomIn-animation {
+    animation: zoomIn 1s linear forwards;
+}
+
+@keyframes zoomIn {
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    0% {
+        transform: scale(.80);
+        opacity: 0;
+    }
+}
